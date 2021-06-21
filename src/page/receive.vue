@@ -9,7 +9,7 @@
         <a href="#" class="map"><img src="../assets/images/receive/map@2x.png" alt=""></a>
     </nav>
     <div class="tab_bar">
-        <a href="javascript:;" v-for="(item,index) in arr" :key="index" @click="profile(index)" :class="active === index && 'active'">{{item}}</a>
+        <a href="javascript:;" v-for="(item,index) in arr" :key="index" @click="page(index)" :class="active === index && 'active'">{{item}}</a>
     </div>
     <section>
         <recmod v-show="active === 0"></recmod>
@@ -43,15 +43,16 @@ export default {
     
   },
   methods: {
-    click() {
-      this.$router.push({ path: "/profile" });
-    },
-    profile(val){
+    page(val){
         this.active = val
     },
-    loding(){
-        this.$router.push({ path: "/loding" });
-    }
+    // click() {
+    //   this.$router.push({ path: "/profile" });
+    // },
+    
+    // loding(){
+    //     this.$router.push({ path: "/loding" });
+    // }
   },
 };
 </script>

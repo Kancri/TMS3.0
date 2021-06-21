@@ -74,13 +74,13 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    click() {
-      this.$router.push({ path: "/profile" });
-    },
-  },
-};
+// export default {
+//   methods: {
+//     click() {
+//       this.$router.push({ path: "/profile" });
+//     },
+//   },
+// };
 </script>
 
 <style scoped>
